@@ -805,3 +805,44 @@ Completion indicators represent authored research presence, never truth scores.
     .reading-controls, .reading-jump-nav, .public-approval-list, .public-compare-input { display: none; }
     .case-layout.reading-focus > .vstack { display: block; }
 }
+
+/* v0.19.14: archival icon system; additive artwork with unchanged controls. */
+.brand-mark { padding: 2px; overflow: hidden; background: #121e30; }
+.brand-mark img { display:block; width:100%; height:100%; object-fit:contain; }
+.nav-ico {display:inline-flex; width:30px; height:30px; flex:0 0 30px; align-items:center; justify-content:center; }
+.nav-ico img { display:block; width:30px; height:30px; object-fit:contain; }
+.mobile-nav-art { display:block; height:26px; width:26px; margin:0 auto 2px; object-fit:contain; }
+.topbar-art { width:22px; height:22px; display:inline-block; object-fit:contain; vertical-align:middle; flex:none; }
+.side-art { width:23px; height:23px; object-fit:contain; vertical-align:middle; margin-right:6px; }
+.brand-welcome { display:flex; justify-content:center; align-items:center; padding:4px 10px 15px; }
+.brand-welcome img { display:block; max-width:min(340px,82%); height:clamp(90px,13vw,155px); object-fit:contain; }
+/* Case tabs and recovery controls share a restrained, purposeful icon scale. */
+.tab[data-tab="board"]::before,.tab[data-tab="timeline"]::before,.tab[data-tab="sources"]::before,
+.tab[data-tab="notes"]::before,.tab[data-tab="review"]::before,.tab[data-tab="publication"]::before,
+.tab[data-tab="subjects"]::before,.tab[data-tab="related"]::before,.tab[data-tab="workflow"]::before,
+.tab[data-tab="questions"]::before,.tab[data-tab="story"]::before {
+ content:""; display:inline-block; vertical-align:-4px; width:20px; height:20px; background-position:center; background-size:contain; background-repeat:no-repeat; margin-right:5px;
+}
+.tab[data-tab="board"]::before{background-image:url('./icons/ui/investigation-board.png')}
+.tab[data-tab="timeline"]::before{background-image:url('./icons/ui/timeline.png')}
+.tab[data-tab="sources"]::before{background-image:url('./icons/ui/source.png')}
+.tab[data-tab="notes"]::before{background-image:url('./icons/ui/notes.png')}
+.tab[data-tab="review"]::before{background-image:url('./icons/ui/tags.png')}
+.tab[data-tab="publication"]::before{background-image:url('./icons/ui/export.png')}
+.tab[data-tab="subjects"]::before{background-image:url('./icons/ui/tags.png')}
+.tab[data-tab="related"]::before{background-image:url('./icons/ui/attachments.png')}
+.tab[data-tab="workflow"]::before{background-image:url('./icons/ui/research-desk.png')}
+.tab[data-tab="questions"]::before{background-image:url('./icons/ui/search.png')}
+.tab[data-tab="story"]::before{background-image:url('./icons/ui/archive.png')}
+button[data-action="fullBackup"]::before,button[data-action="directoryBackup"]::before,
+button[data-action="directoryRestore"]::before,button[data-action="directoryRestoreResume"]::before,
+button[data-action="importZip"]::before,button[data-action="exportData"]::before,
+button[data-action="importData"]::before,button[data-action="trashRecord"]::before,
+button[data-action="newRecord"]::before,button[data-action="newCase"]::before,button[data-action="configureCloud"]::before,button[data-action="syncNow"]::before {content:"";display:inline-block;vertical-align:-4px;width:19px;height:19px;background-size:contain;background-repeat:no-repeat;margin-right:5px;}
+button[data-action="fullBackup"]::before,button[data-action="directoryBackup"]::before{background-image:url('./icons/ui/backup.png')}
+button[data-action="directoryRestore"]::before,button[data-action="directoryRestoreResume"]::before,button[data-action="importZip"]::before,button[data-action="importData"]::before{background-image:url('./icons/ui/restore.png')}
+button[data-action="exportData"]::before{background-image:url('./icons/ui/export.png')}
+button[data-action="trashRecord"]::before{background-image:url('./icons/ui/trash.png')}
+button[data-action="newRecord"]::before,button[data-action="newCase"]::before{background-image:url('./icons/ui/new-case.png')}
+button[data-action="configureCloud"]::before,button[data-action="syncNow"]::before{background-image:url('./icons/ui/cloud-sync.png')}
+@media (max-width: 720px){ .brand-welcome img{height:100px;} .brand-welcome{padding-bottom:8px} }

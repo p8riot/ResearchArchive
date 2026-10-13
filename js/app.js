@@ -30,7 +30,7 @@ import {createNavigationTrail} from './navigation-trail.js';
 import {summarizeRecovery, recoveryChecklist} from './recovery-readiness.js';
 import {isolateDialogBackground, manageDialogTab} from './dialog-accessibility.js';
 
-const VERSION='0.19.13';
+const VERSION='0.19.14';
 const SESSION_CHECK_ID=crypto.randomUUID();
 const cloud=new CloudSync();
 const state={page:'desk',caseId:null,caseTab:'story',readingDepth:'quick',readingFocus:false,search:'',archiveCategory:'All',archiveStatus:'All',archiveSort:'updated',archiveView:'grid',inboxStatus:'Active',libraryTab:'bookmarks',connectionFocus:'',relationFilter:'All',searchType:'All',boardFilter:'All',boardSelected:'',boardVisible:32,boardLinksVisible:48,caseItemsVisible:40,archiveVisible:48,searchVisible:60,libraryVisible:36,queueFilter:'all',queueCaseId:'',queueQuery:'',queueAttention:'all',queueSort:'attention',queueVisible:48,subjectQuery:'',subjectKind:'All',subjectVisible:48,focusRecord:''};
@@ -164,8 +164,8 @@ function travelResearchTrail(delta) {
 }
 
 function renderNavigation(){
-    $('#desktop-nav').innerHTML=NAV.map(([id,ico,label])=>`<button class="nav-button ${state.page===id?'active':''}" data-page="${id}" ${state.page===id?'aria-current="page"':''}><span class="nav-ico" aria-hidden="true">${ico}</span>${label}</button>`).join('')+`<div class="sep"></div><button class="nav-button ${state.page==='settings'?'active':''}" data-page="settings"><span class="nav-ico">⚙</span>Settings</button>`;
-    $('#mobile-nav').innerHTML=NAV.map(([id,ico,label])=>`<button data-page="${id}" class="${state.page===id||(state.page==='case'&&id==='archive')?'active':''}" ${state.page===id?'aria-current="page"':''}><span class="nav-ico" aria-hidden="true">${ico}</span>${label==='Research Desk'?'Desk':label==='The Archive'?'Archive':label==='Research Inbox'?'Inbox':label}</button>`).join('');
+    $('#desktop-nav').innerHTML=NAV.map(([id,ico,label])=>`<button class="nav-button ${state.page===id?'active':''}" data-page="${id}" ${state.page===id?'aria-current="page"':''}><span class="nav-ico" aria-hidden="true"><img src="./icons/ui/${({desk:'research-desk',archive:'archive',inbox:'source',connections:'investigation-board',library:'notes'})[id]}.png" alt=""></span>${label}</button>`).join('')+`<div class="sep"></div><button class="nav-button ${state.page==='settings'?'active':''}" data-page="settings"><span class="nav-ico" aria-hidden="true"><img src="./icons/ui/settings.png" alt=""></span>Settings</button>`;
+    $('#mobile-nav').innerHTML=NAV.map(([id,ico,label])=>`<button data-page="${id}" class="${state.page===id||(state.page==='case'&&id==='archive')?'active':''}" ${state.page===id?'aria-current="page"':''}><img class="mobile-nav-art" src="./icons/ui/${({desk:'research-desk',archive:'archive',inbox:'source',connections:'investigation-board',library:'notes'})[id]}.png" alt="" aria-hidden="true"><span>${label==='Research Desk'?'Desk':label==='The Archive'?'Archive':label==='Research Inbox'?'Inbox':label}</span></button>`).join('');
 }
 function openModal(title,body,after=null){
     const origin = $('#modal-root').children.length ? window.modalRestore : document.activeElement;
@@ -221,6 +221,7 @@ async function renderDesk(rows){
     const last=await getMeta('recent_case');
     const recent=cases.find(r=>r.id===last);
     return `${pageHeader('PRIVATE RESEARCH HEADQUARTERS','Welcome to your research desk','A quiet place to follow questions, preserve sources, and investigate without losing the thread.',button('addDiscovery','＋ Add Discovery','btn btn-gold')+button('newCase','New Case','btn'))}
+        <div class="brand-welcome" aria-hidden="true"><img src="./icons/brand/full-logo.png" alt=""></div>
         <div class="grid four" style="margin-bottom:20px">
             <div class="panel"><div class="stat-number">${cases.length}</div><div class="stat-label">Cases in your archive</div></div>
             <div class="panel"><div class="stat-number">${ongoing.length}</div><div class="stat-label">Active investigations</div></div>

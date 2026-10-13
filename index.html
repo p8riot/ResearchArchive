@@ -8,8 +8,9 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="manifest" href="./manifest.webmanifest">
-    <link rel="apple-touch-icon" href="./icons/icon-192.png">
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
     <link rel="icon" href="./icons/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="./icons/favicon-32.png" sizes="32x32" type="image/png">
     <link rel="stylesheet" href="./styles.css">
     <title>The Research Archive · Private Workspace</title>
 </head>
@@ -25,11 +26,11 @@
          ================================================================== -->
     <div class="app-shell">
         <aside class="sidebar" aria-label="Primary navigation">
-            <div class="brand"><div class="brand-mark" aria-hidden="true">⌁</div><div><strong>THE RESEARCH<br>ARCHIVE</strong><small>PRIVATE INVESTIGATIONS</small></div></div>
+            <div class="brand"><div class="brand-mark" aria-hidden="true"><img src="./icons/brand/emblem-transparent-512.png" alt=""></div><div><strong>THE RESEARCH<br>ARCHIVE</strong><small>PRIVATE INVESTIGATIONS</small></div></div>
             <div class="nav-caption">WORKSPACE</div>
             <nav id="desktop-nav" class="primary-nav" aria-label="Workspace"></nav>
             <div class="sidebar-bottom">
-                <button id="side-capture" class="btn btn-gold block" type="button">＋ Add Discovery</button>
+                <button id="side-capture" class="btn btn-gold block" type="button"><img class="side-art" src="./icons/ui/new-case.png" alt="" aria-hidden="true"> Add Discovery</button>
                 <div class="sidebar-footer">Built using the <a href="https://linktr.ee/p8riot" target="_blank" rel="noopener noreferrer">p8Core</a> App Builder</div>
             </div>
         </aside>
@@ -40,13 +41,13 @@
                     <button id="trail-forward" type="button" class="trail-button" data-action="trailForward" aria-label="Go forward in research trail" title="Forward (Alt+Shift+Right)" disabled>→</button>
                 </div><div class="eyebrow" id="breadcrumb">RESEARCH DESK</div><div class="topbar-title" id="header-title">Your private investigation workspace</div></div>
                 <div class="topbar-actions">
-                    <button class="top-search" id="global-search-btn" type="button" aria-label="Search archive"><span aria-hidden="true">⌕</span><span class="top-search-label">Search the archive</span><kbd>/</kbd></button>
-                    <button class="icon-button" id="quick-note" type="button" title="Quick Notebook" aria-label="Open quick notebook">✎</button>
+                    <button class="top-search" id="global-search-btn" type="button" aria-label="Search archive"><img src="./icons/ui/search.png" class="topbar-art" alt="" aria-hidden="true"><span class="top-search-label">Search the archive</span><kbd>/</kbd></button>
+                    <button class="icon-button" id="quick-note" type="button" title="Quick Notebook" aria-label="Open quick notebook"><img src="./icons/ui/notes.png" class="topbar-art" alt="" aria-hidden="true"></button>
                     <button class="icon-button mobile-only" id="top-capture" type="button" title="Add discovery" aria-label="Add discovery">＋</button>
                 </div>
             </header>
             <main id="view" tabindex="-1"></main>
-            <footer class="app-foot"><span id="foot-version">Research Archive 0.19.13 · Development</span><span id="footer-status" aria-live="polite">Private local workspace</span></footer>
+            <footer class="app-foot"><span id="foot-version">Research Archive 0.19.14 · Development</span><span id="footer-status" aria-live="polite">Private local workspace</span></footer>
         </div>
     </div>
     <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile primary navigation"></nav>
@@ -83,6 +84,6 @@
         }, 10000);
     })();
     </script>
-    <script type="module" src="./js/app.js?v=0.19.13"></script>
+    <script type="module" src="./js/app.js?v=0.19.14"></script>
 </body>
 </html>

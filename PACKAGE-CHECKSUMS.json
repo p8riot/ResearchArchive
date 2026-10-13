@@ -1,177 +1,72 @@
 {
-  "app": "The Research Archive",
-  "app_version": "0.19.13",
-  "package_kind": "GitHub Pages static PWA project, extracted ZIP contents uploaded to repository root",
-  "stage": "test / feature-complete development; stable release acceptance pending",
-  "source_windows_package_sha256": "8e14f3146c002d71be0d15036c2c972e132df2e831a892c41dc3231c4585eec9",
-  "source_cumulative_checkpoint_sha256": "febf399dd9462bc1bcf05cfc9e5311e15898515d54afc267c94420b81231f192",
-  "web_code_changed_only_in": "index.html startup diagnostics strings",
-  "data_storage_or_backup_format_changed": false,
-  "files": [
-    {
-      "path": ".nojekyll",
-      "bytes": 0,
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "path": "README.md",
-      "bytes": 5733,
-      "sha256": "a21f74be152201c099cfbcd298a67ed657757462573234c25e3e97b1b9dec63b"
-    },
-    {
-      "path": "icons/favicon.svg",
-      "bytes": 405,
-      "sha256": "3c86b79d82edb5962f821dbf3a212566021746ef5586461076e3a378f2320151"
-    },
-    {
-      "path": "icons/icon-192.png",
-      "bytes": 1343,
-      "sha256": "5562588c803214f36ef59d5c862c28d026de23885756abad47249b7061f77363"
-    },
-    {
-      "path": "icons/icon-512.png",
-      "bytes": 4009,
-      "sha256": "12e48a1c92df13f28161542ea6872e2ee055e78e5b48f828d4fc43193b8fe7fd"
-    },
-    {
-      "path": "index.html",
-      "bytes": 5843,
-      "sha256": "2dac1307db8c2eda16288749dd6638177111171e070a51443d28e9417e67bf61"
-    },
-    {
-      "path": "js/app.js",
-      "bytes": 172853,
-      "sha256": "2985365efaaa4d76f139175bd75518c1635bffda8c108af93c9f953bcdd9de76"
-    },
-    {
-      "path": "js/backup.js",
-      "bytes": 16996,
-      "sha256": "c39d4701518fc39505f206db0187af45eacea1195428fa393f17dd555cd63aee"
-    },
-    {
-      "path": "js/board-layout.js",
-      "bytes": 2328,
-      "sha256": "73ae50a48f36000c785ec4ef4bc970ce92641c0e13483fc1b7f83cc2fe3a83af"
-    },
-    {
-      "path": "js/case-workflow.js",
-      "bytes": 7624,
-      "sha256": "ff3213b3e397ecd639d617c7f7f49e3624035efc76891bcc9e4d9e9434d5b892"
-    },
-    {
-      "path": "js/claim-evidence.js",
-      "bytes": 2547,
-      "sha256": "a06d81ea950674af6787648b220457ba04398bda39e73c69140dcdf967166858"
-    },
-    {
-      "path": "js/cloud.js",
-      "bytes": 14586,
-      "sha256": "cf49569e0d3ed373189be44dd716fe2b58b60f7bc1c13c5072f342820f747602"
-    },
-    {
-      "path": "js/data.js",
-      "bytes": 16700,
-      "sha256": "e1dc6830acc065bf8c02afbf2a6f978abf20743f227f2d5d0081022d61f4a192"
-    },
-    {
-      "path": "js/dialog-accessibility.js",
-      "bytes": 1536,
-      "sha256": "287e71382acf62f7dc4da1a1db8d42c0e2e55deabe87966bc29c5481215e111e"
-    },
-    {
-      "path": "js/directory-backup.js",
-      "bytes": 27880,
-      "sha256": "beaeb941170408ef4fe278048d4f2c0da2427049a6246cf4bd7868a9cb21829a"
-    },
-    {
-      "path": "js/editorial-queue.js",
-      "bytes": 4998,
-      "sha256": "7e129e9df9e926c2a155177589bb2ebc66c0e73abf71fe171df7f6b2842feeca"
-    },
-    {
-      "path": "js/editorial-review.js",
-      "bytes": 7135,
-      "sha256": "9a46af2d68d2519ad0371da64208e023361d8d2d047986288cdd5e73063cf84f"
-    },
-    {
-      "path": "js/editorial-triage.js",
-      "bytes": 3944,
-      "sha256": "1f817e606723db4373140b36170883e67cae50ad58f2531ca5a10be875eba5e5"
-    },
-    {
-      "path": "js/entities.js",
-      "bytes": 4377,
-      "sha256": "81b8809518420a0e48b2bebf62be93160991cd3936a935b48f6352dac9e654c6"
-    },
-    {
-      "path": "js/investigation.js",
-      "bytes": 3239,
-      "sha256": "c70d9ad19c42bf55bff16c9b0396db071dc3eca8cebf2e084e12de42b0dead05"
-    },
-    {
-      "path": "js/navigation-trail.js",
-      "bytes": 1438,
-      "sha256": "c4bf5f0c9b5db4d8ccfee040fd78b0d114cda865d9c1b23362bde5b573cdc6c8"
-    },
-    {
-      "path": "js/provenance.js",
-      "bytes": 3901,
-      "sha256": "f7fbc4432034fa3d8b60e8c129371a27874aa773485cdaa2103697a2e2418665"
-    },
-    {
-      "path": "js/publication-compare.js",
-      "bytes": 5049,
-      "sha256": "6cbfc3f7e33370bf28e088ca54b0052b18fd55e7d74207effcc159879eb21b6d"
-    },
-    {
-      "path": "js/publication.js",
-      "bytes": 7932,
-      "sha256": "6fb74ae01a29bc11619827cf80cb57f7463da57ce812c2317518b9212cd7b948"
-    },
-    {
-      "path": "js/reading-sections.js",
-      "bytes": 1694,
-      "sha256": "e5c9479fdbac8857a9a165cebaf0ce31f691e80f1ecba3b33dee81b1cd99f8c7"
-    },
-    {
-      "path": "js/recovery-readiness.js",
-      "bytes": 2007,
-      "sha256": "0044e9044006caea5ebc0a17eebf246e1c5744394d3f4ca4d74a9e0d4f3ba6dd"
-    },
-    {
-      "path": "js/search-index.js",
-      "bytes": 9261,
-      "sha256": "e6a8c13d1cab521fe0288cc95fc9b58f9d13fca0a141ab1fc896acc927ef8abf"
-    },
-    {
-      "path": "js/source-intake.js",
-      "bytes": 4118,
-      "sha256": "09943c98c345ff1ac551e7ffff66dbf7782d5eeaa8c8f39488dd0a02145f8177"
-    },
-    {
-      "path": "js/source-picker.js",
-      "bytes": 2307,
-      "sha256": "30630ec31e8a8ae367226ebf556141a6702b3d272f0b440c89f12b15a45614eb"
-    },
-    {
-      "path": "js/source-workflow.js",
-      "bytes": 2950,
-      "sha256": "49ec478e9fbfaa78f6e5038afef7894e76950de9f7067072d196ba116f6c9c23"
-    },
-    {
-      "path": "manifest.webmanifest",
-      "bytes": 559,
-      "sha256": "8904b0c6e3d1aa149f36af232fdfaddb6a8e916d6a50dffa9c18125079b48ca0"
-    },
-    {
-      "path": "styles.css",
-      "bytes": 33135,
-      "sha256": "1f9ba6d3d97e18a8dfc51b4ba870db8427c4b02e04ff663d08e012cd77b81089"
-    },
-    {
-      "path": "sw.js",
-      "bytes": 2129,
-      "sha256": "678dcbe29a6fbe89efd7bbf431168334bef69ff8c6a5789aa119ad87bfd5c6df"
-    }
-  ]
+  "package": "The Research Archive 0.19.14 | GitHub Pages branded test build",
+  "baseline": "The Research Archive 0.19.13 | GitHub Pages",
+  "count": 65,
+  "files": {
+    ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "README.md": "7ed5d8e723c3c6eb7d30867941cfce750ec0718eefd031ca5363fd586dcce9be",
+    "icons/apple-touch-icon.png": "39ed9f570278d0c0596448daf8425fe3605164750dee185bbc5b08e3b2f7bdd0",
+    "icons/brand/emblem-transparent-512.png": "e561efe9462e4d019206017e429ba967d31455fd3960aedb463532c93cd97794",
+    "icons/brand/full-logo.png": "f134f0f7f4e29505e3552a7673d3af2beaa0d6ccdf9a98120242efa3a147024b",
+    "icons/favicon-16.png": "bc76263610f544014edbfe072b2fab95fcdb32a76ee86b0b0ae3fa90a245e2b6",
+    "icons/favicon-32.png": "709d57d50d0eec62de187e876aac742243aab4af4f7c140ea04ac176c27838d8",
+    "icons/favicon.svg": "c2e6624823511c04b7c42bae2e6aaae27753009518dd980e72c399b1fd36cbc8",
+    "icons/icon-128.png": "39aaee4e2fe7cdf22551ea1e81e57ababb56a35002877d15e9f94ed9b4720c96",
+    "icons/icon-144.png": "ebf382a8427d922cb2cf76c643ec3951c42eba61f8ac776d62005c9bdef9454d",
+    "icons/icon-152.png": "1f6dfe1f301c6bb3d0f51e0f6d4ba2c5f0001957f63b37caa2b1a784f367ef2e",
+    "icons/icon-180.png": "fa8595dd7923a38e81e031d9afe5475b2251780536e4258f377cc8dacf08bcae",
+    "icons/icon-192.png": "985fc53daaaefde80bc1a6ed36846bdd9aca633b63d7b16bfcc81af37228ebd6",
+    "icons/icon-256.png": "c5b22797b2f9aa3eab2ae333d2deb9565bae5e78a39bdc81a58c7c162fef0d43",
+    "icons/icon-384.png": "487a47b6578e179e8b52caff0a8bd1fef2d4516a12f11a4f21d2586aae7d2430",
+    "icons/icon-48.png": "1e32d7b1bc57c618f5ca95c9fd0fb7932bd731edce7b45c1bfca151b723952a6",
+    "icons/icon-512.png": "2d67bbd7ea5adcd05a58c8e7d8e646224d24d7f89569447742c2234dfc4102d5",
+    "icons/icon-72.png": "5261b62701365d72102029b5b7f75a7ab0cec07c4ea603e59e43235517b625ab",
+    "icons/icon-96.png": "1d6bcd6208d07cee0eafefc8bdca95cc5f867d44b0c63f31aca7c23a624029b6",
+    "icons/icon-maskable-192.png": "5a5c0dc40c7be65347568148742d992c5ae1f2508dfb9c5a192e618a42acc09a",
+    "icons/icon-maskable-512.png": "16ff3213b2631b98895047813aa91d1c45380ab0090c2558b27b13fe7226c09c",
+    "icons/ui/archive.png": "58b55c75c5ca47ed41931da68b3c84295706de514ca5118344b2a854acf85fdf",
+    "icons/ui/attachments.png": "c0a2e3cddeed7610fc2554fbad961d7c9a78626f6258e56982a2584bcfdd0611",
+    "icons/ui/backup.png": "0f27024f9d1a6f567f6cbe8d16a5f4bb5c2357538ef9990d145a02ceaa23f650",
+    "icons/ui/cloud-sync.png": "5b85b110d9e88237ba68c31c143cee7de67e7ef721b16c9131a0ea16fec38afe",
+    "icons/ui/export.png": "a2854f80675a1b969577cc5aca008ae4babb1bd4dc471bd9670398b67af8fad8",
+    "icons/ui/investigation-board.png": "9438d11536e7c129a2bc28c023c162d097565c8f6d67b8b6d0d6eaef42a0ddc1",
+    "icons/ui/new-case.png": "9263444e35ad2e847699b97b47401410b715cad2517861e65301640b05bd616b",
+    "icons/ui/notes.png": "57120817f001954a959a8932a799c2a459f4da28be76991b75ebd51d0f669a2d",
+    "icons/ui/research-desk.png": "57956ec03c238f3ad503113cfbc7a2a0b670b813e3183d61f21fb4511060411e",
+    "icons/ui/restore.png": "f89d9fd672364ccdb587c2a8f17f40adaad9c52da0f698a77255d1937e422781",
+    "icons/ui/search.png": "05a5ea484245a3cbb599e4a4ffbced5be9ca5380deb87f22041c1b11a791e995",
+    "icons/ui/settings.png": "456b304d3316a1c2b3c71afba6dc509ccf703b17f7096e1af909fbec67186fe0",
+    "icons/ui/source.png": "5891d589218f6fd182a338097181d4bd4dc20358ec85c6c3cbd09782d8e0c833",
+    "icons/ui/tags.png": "4865c2c01aaa80c2aa99bfda6a847d481cb4e711d691fb0d563d235dd500fc62",
+    "icons/ui/timeline.png": "9b08d690a5aa7365a418546399dcacd71155dec69193f88f65e89a0da2c90f49",
+    "icons/ui/trash.png": "b6f8071a2d44659ae49528ce8b699eca483cc1f75d5c261b56fc626391accee1",
+    "index.html": "c7982c8c6609ae4e620d0f514635637c10318e24b44fc88d1d52c941bfe4d8e9",
+    "js/app.js": "aa8afbc8c65eb2df44136226bf92be576a1a7d3aa5ce784c0c01a6582acb6234",
+    "js/backup.js": "c39d4701518fc39505f206db0187af45eacea1195428fa393f17dd555cd63aee",
+    "js/board-layout.js": "73ae50a48f36000c785ec4ef4bc970ce92641c0e13483fc1b7f83cc2fe3a83af",
+    "js/case-workflow.js": "ff3213b3e397ecd639d617c7f7f49e3624035efc76891bcc9e4d9e9434d5b892",
+    "js/claim-evidence.js": "a06d81ea950674af6787648b220457ba04398bda39e73c69140dcdf967166858",
+    "js/cloud.js": "cf49569e0d3ed373189be44dd716fe2b58b60f7bc1c13c5072f342820f747602",
+    "js/data.js": "e1dc6830acc065bf8c02afbf2a6f978abf20743f227f2d5d0081022d61f4a192",
+    "js/dialog-accessibility.js": "287e71382acf62f7dc4da1a1db8d42c0e2e55deabe87966bc29c5481215e111e",
+    "js/directory-backup.js": "beaeb941170408ef4fe278048d4f2c0da2427049a6246cf4bd7868a9cb21829a",
+    "js/editorial-queue.js": "7e129e9df9e926c2a155177589bb2ebc66c0e73abf71fe171df7f6b2842feeca",
+    "js/editorial-review.js": "9a46af2d68d2519ad0371da64208e023361d8d2d047986288cdd5e73063cf84f",
+    "js/editorial-triage.js": "1f817e606723db4373140b36170883e67cae50ad58f2531ca5a10be875eba5e5",
+    "js/entities.js": "81b8809518420a0e48b2bebf62be93160991cd3936a935b48f6352dac9e654c6",
+    "js/investigation.js": "c70d9ad19c42bf55bff16c9b0396db071dc3eca8cebf2e084e12de42b0dead05",
+    "js/navigation-trail.js": "c4bf5f0c9b5db4d8ccfee040fd78b0d114cda865d9c1b23362bde5b573cdc6c8",
+    "js/provenance.js": "f7fbc4432034fa3d8b60e8c129371a27874aa773485cdaa2103697a2e2418665",
+    "js/publication-compare.js": "6cbfc3f7e33370bf28e088ca54b0052b18fd55e7d74207effcc159879eb21b6d",
+    "js/publication.js": "6fb74ae01a29bc11619827cf80cb57f7463da57ce812c2317518b9212cd7b948",
+    "js/reading-sections.js": "e5c9479fdbac8857a9a165cebaf0ce31f691e80f1ecba3b33dee81b1cd99f8c7",
+    "js/recovery-readiness.js": "0044e9044006caea5ebc0a17eebf246e1c5744394d3f4ca4d74a9e0d4f3ba6dd",
+    "js/search-index.js": "e6a8c13d1cab521fe0288cc95fc9b58f9d13fca0a141ab1fc896acc927ef8abf",
+    "js/source-intake.js": "09943c98c345ff1ac551e7ffff66dbf7782d5eeaa8c8f39488dd0a02145f8177",
+    "js/source-picker.js": "30630ec31e8a8ae367226ebf556141a6702b3d272f0b440c89f12b15a45614eb",
+    "js/source-workflow.js": "49ec478e9fbfaa78f6e5038afef7894e76950de9f7067072d196ba116f6c9c23",
+    "manifest.webmanifest": "a4dcbf171525954093bc553e6a178f7066e9e82a716d1ed317f53fe6ddad7105",
+    "styles.css": "666a91dce2105f03fea078f5dfd7b2472b1d2b3bad9135dde931b6da4de5f212",
+    "sw.js": "266afa4630579ec89a8688e577a706b7323d514ea09ba616879d637d12812233"
+  }
 }

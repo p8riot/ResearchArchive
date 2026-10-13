@@ -1,6 +1,6 @@
 # The Research Archive | GitHub Pages package
 
-**Application version:** 0.19.13  
+**Application version:** 0.19.14  
 **Status:** Feature-complete development build for owner testing. **Not yet certified as stable 1.0.0.**
 
 This is the ready-to-upload **static website/PWA package**. It does **not** need Python, Node.js, GitHub Actions, a build process, or the Windows launcher. The ZIP contains everything necessary to serve the core local-first app through GitHub Pages.
@@ -24,6 +24,10 @@ The application uses **relative asset, service-worker, manifest start and scope 
 - Cloud synchronization is optional, requires your own Supabase setup, and has **not** passed live two-account isolation testing. Do not enable it for other users before testing its security and access controls. No Supabase service-role secret should ever be committed into this repository.
 - **All files you publish on GitHub Pages are public to visitors**, even when hosted from an eligible private repository. This cannot hide the client-side JavaScript from visitors. Review legal/rights and release readiness before distributing broadly.
 - This application has **not** completed real installed-PWA offline/upgrade testing, true Windows secondary-drive restore, or screen-reader acceptance testing. Treat this as a deployable **test build**, not an approved production release.
+
+## New branded artwork
+
+The icon pack includes a full logo, app icon, mobile installation images and 16 UI illustrations. Icons are wired into the existing interface (sidebar, mobile navigation, search, notebook, case tabs and recovery actions). The manifest contains standard and separate safe-area maskable install icons. Do not rename or omit files within `icons/`; the offline worker precaches the artwork. This is still a testing build, not a certified stable 1.0.0.
 
 ## What to include
 
