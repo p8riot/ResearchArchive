@@ -1,0 +1,177 @@
+{
+  "app": "The Research Archive",
+  "app_version": "0.19.13",
+  "package_kind": "GitHub Pages static PWA project, extracted ZIP contents uploaded to repository root",
+  "stage": "test / feature-complete development; stable release acceptance pending",
+  "source_windows_package_sha256": "8e14f3146c002d71be0d15036c2c972e132df2e831a892c41dc3231c4585eec9",
+  "source_cumulative_checkpoint_sha256": "febf399dd9462bc1bcf05cfc9e5311e15898515d54afc267c94420b81231f192",
+  "web_code_changed_only_in": "index.html startup diagnostics strings",
+  "data_storage_or_backup_format_changed": false,
+  "files": [
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5733,
+      "sha256": "a21f74be152201c099cfbcd298a67ed657757462573234c25e3e97b1b9dec63b"
+    },
+    {
+      "path": "icons/favicon.svg",
+      "bytes": 405,
+      "sha256": "3c86b79d82edb5962f821dbf3a212566021746ef5586461076e3a378f2320151"
+    },
+    {
+      "path": "icons/icon-192.png",
+      "bytes": 1343,
+      "sha256": "5562588c803214f36ef59d5c862c28d026de23885756abad47249b7061f77363"
+    },
+    {
+      "path": "icons/icon-512.png",
+      "bytes": 4009,
+      "sha256": "12e48a1c92df13f28161542ea6872e2ee055e78e5b48f828d4fc43193b8fe7fd"
+    },
+    {
+      "path": "index.html",
+      "bytes": 5843,
+      "sha256": "2dac1307db8c2eda16288749dd6638177111171e070a51443d28e9417e67bf61"
+    },
+    {
+      "path": "js/app.js",
+      "bytes": 172853,
+      "sha256": "2985365efaaa4d76f139175bd75518c1635bffda8c108af93c9f953bcdd9de76"
+    },
+    {
+      "path": "js/backup.js",
+      "bytes": 16996,
+      "sha256": "c39d4701518fc39505f206db0187af45eacea1195428fa393f17dd555cd63aee"
+    },
+    {
+      "path": "js/board-layout.js",
+      "bytes": 2328,
+      "sha256": "73ae50a48f36000c785ec4ef4bc970ce92641c0e13483fc1b7f83cc2fe3a83af"
+    },
+    {
+      "path": "js/case-workflow.js",
+      "bytes": 7624,
+      "sha256": "ff3213b3e397ecd639d617c7f7f49e3624035efc76891bcc9e4d9e9434d5b892"
+    },
+    {
+      "path": "js/claim-evidence.js",
+      "bytes": 2547,
+      "sha256": "a06d81ea950674af6787648b220457ba04398bda39e73c69140dcdf967166858"
+    },
+    {
+      "path": "js/cloud.js",
+      "bytes": 14586,
+      "sha256": "cf49569e0d3ed373189be44dd716fe2b58b60f7bc1c13c5072f342820f747602"
+    },
+    {
+      "path": "js/data.js",
+      "bytes": 16700,
+      "sha256": "e1dc6830acc065bf8c02afbf2a6f978abf20743f227f2d5d0081022d61f4a192"
+    },
+    {
+      "path": "js/dialog-accessibility.js",
+      "bytes": 1536,
+      "sha256": "287e71382acf62f7dc4da1a1db8d42c0e2e55deabe87966bc29c5481215e111e"
+    },
+    {
+      "path": "js/directory-backup.js",
+      "bytes": 27880,
+      "sha256": "beaeb941170408ef4fe278048d4f2c0da2427049a6246cf4bd7868a9cb21829a"
+    },
+    {
+      "path": "js/editorial-queue.js",
+      "bytes": 4998,
+      "sha256": "7e129e9df9e926c2a155177589bb2ebc66c0e73abf71fe171df7f6b2842feeca"
+    },
+    {
+      "path": "js/editorial-review.js",
+      "bytes": 7135,
+      "sha256": "9a46af2d68d2519ad0371da64208e023361d8d2d047986288cdd5e73063cf84f"
+    },
+    {
+      "path": "js/editorial-triage.js",
+      "bytes": 3944,
+      "sha256": "1f817e606723db4373140b36170883e67cae50ad58f2531ca5a10be875eba5e5"
+    },
+    {
+      "path": "js/entities.js",
+      "bytes": 4377,
+      "sha256": "81b8809518420a0e48b2bebf62be93160991cd3936a935b48f6352dac9e654c6"
+    },
+    {
+      "path": "js/investigation.js",
+      "bytes": 3239,
+      "sha256": "c70d9ad19c42bf55bff16c9b0396db071dc3eca8cebf2e084e12de42b0dead05"
+    },
+    {
+      "path": "js/navigation-trail.js",
+      "bytes": 1438,
+      "sha256": "c4bf5f0c9b5db4d8ccfee040fd78b0d114cda865d9c1b23362bde5b573cdc6c8"
+    },
+    {
+      "path": "js/provenance.js",
+      "bytes": 3901,
+      "sha256": "f7fbc4432034fa3d8b60e8c129371a27874aa773485cdaa2103697a2e2418665"
+    },
+    {
+      "path": "js/publication-compare.js",
+      "bytes": 5049,
+      "sha256": "6cbfc3f7e33370bf28e088ca54b0052b18fd55e7d74207effcc159879eb21b6d"
+    },
+    {
+      "path": "js/publication.js",
+      "bytes": 7932,
+      "sha256": "6fb74ae01a29bc11619827cf80cb57f7463da57ce812c2317518b9212cd7b948"
+    },
+    {
+      "path": "js/reading-sections.js",
+      "bytes": 1694,
+      "sha256": "e5c9479fdbac8857a9a165cebaf0ce31f691e80f1ecba3b33dee81b1cd99f8c7"
+    },
+    {
+      "path": "js/recovery-readiness.js",
+      "bytes": 2007,
+      "sha256": "0044e9044006caea5ebc0a17eebf246e1c5744394d3f4ca4d74a9e0d4f3ba6dd"
+    },
+    {
+      "path": "js/search-index.js",
+      "bytes": 9261,
+      "sha256": "e6a8c13d1cab521fe0288cc95fc9b58f9d13fca0a141ab1fc896acc927ef8abf"
+    },
+    {
+      "path": "js/source-intake.js",
+      "bytes": 4118,
+      "sha256": "09943c98c345ff1ac551e7ffff66dbf7782d5eeaa8c8f39488dd0a02145f8177"
+    },
+    {
+      "path": "js/source-picker.js",
+      "bytes": 2307,
+      "sha256": "30630ec31e8a8ae367226ebf556141a6702b3d272f0b440c89f12b15a45614eb"
+    },
+    {
+      "path": "js/source-workflow.js",
+      "bytes": 2950,
+      "sha256": "49ec478e9fbfaa78f6e5038afef7894e76950de9f7067072d196ba116f6c9c23"
+    },
+    {
+      "path": "manifest.webmanifest",
+      "bytes": 559,
+      "sha256": "8904b0c6e3d1aa149f36af232fdfaddb6a8e916d6a50dffa9c18125079b48ca0"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 33135,
+      "sha256": "1f9ba6d3d97e18a8dfc51b4ba870db8427c4b02e04ff663d08e012cd77b81089"
+    },
+    {
+      "path": "sw.js",
+      "bytes": 2129,
+      "sha256": "678dcbe29a6fbe89efd7bbf431168334bef69ff8c6a5789aa119ad87bfd5c6df"
+    }
+  ]
+}

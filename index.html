@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#121a20">
+    <meta name="description" content="A private local-first research archive for mysteries, history and unusual claims.">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="apple-touch-icon" href="./icons/icon-192.png">
+    <link rel="icon" href="./icons/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css">
+    <title>The Research Archive · Private Workspace</title>
+</head>
+<body data-theme="archive">
+    <section id="startup-status" class="startup-status" role="status" aria-live="polite">
+        <strong id="startup-title">Starting The Research Archive</strong>
+        <p id="startup-message">Loading your private workspace…</p>
+    </section>
+    <a class="skip-link" href="#view">Skip to research content</a>
+    <!-- ==================================================================
+         [HTML-01] APPLICATION SHELL
+         Shared navigation stays consistent across desktop and mobile.
+         ================================================================== -->
+    <div class="app-shell">
+        <aside class="sidebar" aria-label="Primary navigation">
+            <div class="brand"><div class="brand-mark" aria-hidden="true">⌁</div><div><strong>THE RESEARCH<br>ARCHIVE</strong><small>PRIVATE INVESTIGATIONS</small></div></div>
+            <div class="nav-caption">WORKSPACE</div>
+            <nav id="desktop-nav" class="primary-nav" aria-label="Workspace"></nav>
+            <div class="sidebar-bottom">
+                <button id="side-capture" class="btn btn-gold block" type="button">＋ Add Discovery</button>
+                <div class="sidebar-footer">Built using the <a href="https://linktr.ee/p8riot" target="_blank" rel="noopener noreferrer">p8Core</a> App Builder</div>
+            </div>
+        </aside>
+        <div class="main-shell">
+            <header class="topbar">
+                <div class="topbar-left"><div class="research-trail-controls" aria-label="Research navigation">
+                    <button id="trail-back" type="button" class="trail-button" data-action="trailBack" aria-label="Go back in research trail" title="Back (Alt+Shift+Left)" disabled>←</button>
+                    <button id="trail-forward" type="button" class="trail-button" data-action="trailForward" aria-label="Go forward in research trail" title="Forward (Alt+Shift+Right)" disabled>→</button>
+                </div><div class="eyebrow" id="breadcrumb">RESEARCH DESK</div><div class="topbar-title" id="header-title">Your private investigation workspace</div></div>
+                <div class="topbar-actions">
+                    <button class="top-search" id="global-search-btn" type="button" aria-label="Search archive"><span aria-hidden="true">⌕</span><span class="top-search-label">Search the archive</span><kbd>/</kbd></button>
+                    <button class="icon-button" id="quick-note" type="button" title="Quick Notebook" aria-label="Open quick notebook">✎</button>
+                    <button class="icon-button mobile-only" id="top-capture" type="button" title="Add discovery" aria-label="Add discovery">＋</button>
+                </div>
+            </header>
+            <main id="view" tabindex="-1"></main>
+            <footer class="app-foot"><span id="foot-version">Research Archive 0.19.13 · Development</span><span id="footer-status" aria-live="polite">Private local workspace</span></footer>
+        </div>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile primary navigation"></nav>
+    <div id="modal-root"></div>
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+    <noscript><div class="noscript">JavaScript is required to manage research records in this app.</div></noscript>
+    <script id="startup-guard">
+    (() => {
+        const banner = document.getElementById('startup-status');
+        const heading = document.getElementById('startup-title');
+        const message = document.getElementById('startup-message');
+        let started = false;
+        const report = (details) => {
+            if (started) return;
+            heading.textContent = 'The Research Archive did not start';
+            message.textContent = details;
+            banner.classList.add('startup-error');
+            banner.hidden = false;
+        };
+        window.researchArchiveBoot = {
+            ready() { started = true; banner.hidden = true; },
+            failed() { report('The workspace could not initialize. Check that you opened the local server in Chrome or Edge, and that browser storage is available.'); }
+        };
+        if (location.protocol === 'file:') {
+            report('This app must be opened from its HTTPS GitHub Pages website, not as a downloaded index.html file. Open your published site URL ending in /.');
+            return;
+        }
+        window.addEventListener('error', () => {
+            report('An application file did not load. Make sure you uploaded all folders and files to the GitHub Pages publishing root, then reload the published website.');
+        }, true);
+        window.addEventListener('unhandledrejection', () => window.researchArchiveBoot.failed());
+        window.setTimeout(() => {
+            report('The workspace has not finished starting. Make sure GitHub Pages deployment succeeded and all website files were published, then reload the site.');
+        }, 10000);
+    })();
+    </script>
+    <script type="module" src="./js/app.js?v=0.19.13"></script>
+</body>
+</html>
